@@ -82,3 +82,7 @@ label, h3{
   .buzz, .fizzbuzz {
     background-color: #D5F5E3;
   }
+
+.disapear{
+  display: none;
+}

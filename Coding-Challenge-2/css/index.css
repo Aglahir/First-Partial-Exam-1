@@ -1,7 +1,106 @@
-
+* {
+  box-sizing: border-box;
+}
 
 div{
     border: 1px solid black;
     padding: 5px;
 }
 
+.navigation {
+  overflow: auto;
+}
+
+.nav-box {
+  width: 50%;
+  margin: 0;
+}
+
+.col-left {
+  float: left;
+}
+
+.col-right {
+  float: right;
+}
+
+.heading {
+  display: none;
+}
+.content {
+  display: none;
+}
+
+@media(min-width:600px) and (max-width:990px)
+{
+ .nav-box {
+    width: 25%;
+    margin: 0;
+  }
+
+  .col-left {
+    float: left;
+  }
+
+  .col-right {
+    float: left;
+  }
+  .content {
+    display: flex;
+  }
+  .side {
+    width: 25%;
+  }
+  .side-box {
+    display: block;
+    text-align: center;
+  }
+  .special-side-box {
+    margin-top: 90%;
+    margin-bottom: 0;
+  }
+  .main {
+    width: 75%;
+  }
+}
+
+@media(min-width:991px)
+{
+  .col-left {
+    float: none;
+  }
+
+  .col-right {
+    float: none;
+  }
+  .heading {
+    display: flex;
+    width: 100%;
+  }
+  .heading-box {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+  }
+  .navigation {
+    display: flex;
+    float: right;
+    margin: 0;
+    width: 100%;
+  }
+  .content {
+    display: flex;
+  }
+  .side {
+    width: 25%;
+  }
+  .side-box {
+    display: block;
+    text-align: center;
+    height: 33%;
+  }
+  .main {
+    width: 75%;
+    display: flex;
+  }
+}
